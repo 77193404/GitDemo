@@ -10,14 +10,14 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText editText;
+    private Button editButton;
     private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editText = findViewById(R.id.edit_text);
+        editButton = findViewById(R.id.edit_button);
         button = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(this, editText.getText().toString(), Toast.LENGTH_SHORT).show();
+        editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+//        Toast.makeText(this, editText.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 }
