@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //B：添加一条注释
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
