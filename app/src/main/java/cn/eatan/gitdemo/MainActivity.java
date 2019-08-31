@@ -28,12 +28,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //B：添加一条注释
-//        editText.setOnClickListener(new View.OnClickListener() {
+//        editButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
 //                finish();
 //            }
 //        });
+
+        //A:添加了一条注释
 
         Toast.makeText(this, editText.getText().toString(), Toast.LENGTH_SHORT).show();
     }
