@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //A:添加了一条注释
+
 //        Toast.makeText(this, editText.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 }
